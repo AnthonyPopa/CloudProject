@@ -336,17 +336,17 @@ function handlePortfolio4ColGrid() {
         });
     }
 
-function checkIfLoggedIn(){
-    var email = sessionStorage.getItem('email');
-    var username = sessionStorage.getItem('username');
-    if (email == null || username == null) {
-            location.href='login.html';
-    }
-}
+// function checkIfLoggedIn(){
+//     var email = sessionStorage.getItem('email');
+//     var username = sessionStorage.getItem('username');
+//     if (email == null || username == null) {
+//             location.href='login.html';
+//     }
+// }
 
 function loadHomePage(){
-    checkIfLoggedIn();
-    $("#userdata-container").html("Logged in as "+sessionStorage.getItem('name')+" ("+sessionStorage.getItem('username')+")");
+    // checkIfLoggedIn();
+    // $("#userdata-container").html("Logged in as "+sessionStorage.getItem('name')+" ("+sessionStorage.getItem('username')+")");
     var datadir = {};
     var htmlstr="";
     $.ajax({
@@ -372,13 +372,13 @@ function loadHomePage(){
 }
 
 function loadAddPhotosPage(){
-    checkIfLoggedIn();
-    $("#userdata-container").html("Logged in as "+sessionStorage.getItem('name')+" ("+sessionStorage.getItem('username')+")");
+    // checkIfLoggedIn();
+    // $("#userdata-container").html("Logged in as "+sessionStorage.getItem('name')+" ("+sessionStorage.getItem('username')+")");
 }
 
 function loadViewPhotoPage(){
-    checkIfLoggedIn();
-    $("#userdata-container").html("Logged in as "+sessionStorage.getItem('name')+" ("+sessionStorage.getItem('username')+")");
+    // checkIfLoggedIn();
+    // $("#userdata-container").html("Logged in as "+sessionStorage.getItem('name')+" ("+sessionStorage.getItem('username')+")");
     PhotoID=$.urlParam('id');
     console.log(PhotoID);
     var htmlstr="";
