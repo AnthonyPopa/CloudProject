@@ -1,7 +1,7 @@
 import { uuidv4 } from 'uuid';
 
 
-const API_URL = "https://nchvb58z75.execute-api.us-east-1.amazonaws.com/dev";
+const API_URL = "https://2cwfpfmfc3.execute-api.us-east-1.amazonaws.com/dev";
 
 $.urlParam = function(name){
     var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
