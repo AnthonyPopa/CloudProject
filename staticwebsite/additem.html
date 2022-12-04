@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Photo Gallery</title>
+<title>Amazon Price Tracker</title>
 <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link href='https://fonts.googleapis.com/css?family=Roboto:100,400,700,500,300,300italic' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
@@ -23,10 +23,9 @@
     <!--========== BACKGROUND COLOR SKY LIGHT ==========-->
     <div class="bg-color-sky-light">
         <br>
-   <center><h2>Photo Gallery</h2>
+   <center><h2>Amazon Price Tracker</h2>
     <br>
-   <div id="userdata-container"></div><br>
-    <a href="index.html">Home</a> | <a href="addphoto.html">Add Photo</a> | <a id="logoutlink" href="#">Logout</a>
+    <a href="index.html">Home</a> | <a href="additem.html">Add Item</a>
     </center>
         <!--========== PAGE CONTENT ==========-->
         <div class="content-sm container">
@@ -36,15 +35,13 @@
                     <article class="blog-grid margin-b-30">
                         <!-- Blog Grid Content -->
                         <div class="blog-grid-content">
-                            <h2 class="blog-grid-title-lg">Upload Photo</h2>
-<form  method='post' action="/add" id="addphotoform" enctype="multipart/form-data">
-                            <input type="file" name="imagefile" id="imagefile" class="form-control">
+                            <h2 class="blog-grid-title-lg">Item Data</h2>
+<form  method='post' action="/add" id="additemform" enctype="multipart/form-data">
+                            <input type="text" name="title" id="title" class="form-control" placeholder="Product Title">
 <br>
-                            <input type="text" name="title" id="title" class="form-control" placeholder="Title">
+                            <input type="text" name="url" id="url" class="form-control" placeholder="Product URL">
 <br>
-                            <textarea name="description" id="description" class="form-control" rows="3" placeholder=" Description"></textarea>
-<br>
-                            <input type="text" name="tags" id="tags" class="form-control" placeholder="Tags" >
+                            <input type="text" name="email" id="email" class="form-control" placeholder="Email for Price Alerts" >
                             <br>
                             <button type="submit" class="btn-base-bg btn-base-sm radius-3" >
                                 Submit</button>
