@@ -92,7 +92,7 @@ function deleteItem(ItemID){
         dataType: 'json',
         contentType: "application/json",
         success: function() {                        
-            console.log("Deleted photo from db");
+            console.log("Deleted item from db");
         },
         error: function() {
             console.log("Failed");
@@ -179,7 +179,7 @@ function loadHomePage(){
     var datadir = {};
     var htmlstr="";
     $.ajax({
-        url: `${API_URL}/photos`,
+        url: `${API_URL}/items`,
         type: 'GET',
         crossDomain: true,
         contentType: "application/json",
